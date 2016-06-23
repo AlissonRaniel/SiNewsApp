@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">SiNewsApp</string>
+    <!-- menus -->
+    <string name="action_home">Home</string>
+    <string name="action_curso">Sobre o Curso</string>
+    <string name="action_plan">Planos de Curso</string>
+    <string name="action_teachers">Professores</string>
+    <string name="action_office">Empregos e Estágios</string>
+
+    <!-- subtitulos -->
+    <string name="txt_news">NOTÍCIAS</string>
+    <string name="txt_curso">SOBRE O CURSO</string>
+    <string name="txt_plan">FLUXOGRAMA</string>
+    <string name="txt_teachers">PROFESSORES</string>
+    <string name="txt_office">EMPREGOS E ESTÁGIOS</string>
+
+    <!-- noticias -->
+    <string name="title1">JSDay 2016 – Na UniFacisa</string>
+    <string name="news1">O JSDay Campina Grande acontecerá no dia “23 de Abril” a partir das 8:00 nas instalações da FACISA...</string>
+    <string name="title2">Google I/O Extended João Pessoa</string>
+    <string name="news2">O Google Developer Group João Pessoa (GDG JP) realiza, de 15 a 17 de maio, um evento voltado para estudantes, empresas...</string>
+    <string name="title3">Evento Rails Girls na UFCG</string>
+    <string name="news3">Aconteceu nos dias 26 e 27 de abril no Campi da UFCG, em Campina Grande, o Rails Girls. Evento que começou na Finlândia...</string>
+
+    <!-- sobre o curso -->
+    <string name="title_activity_main_sobre_curso">Sobre o Curso</string>
+
+    <!-- plano o curso -->
+    <string name="title_activity_main_plano_curso">MainPlanoCurso</string>
+    <string name="firstPeriod">1º Período</string>
+    <string name="secundPeriod">2º Período</string>
+    <string name="thirdPeriod">3º Período</string>
+    <string name="fourthPeriod">4º Período</string>
+    <string name="fifthPeriod">5º Período</string>
+    <string name="sixthPeriod">6º Período</string>
+    <string name="seventhPeriod">7º Período</string>
+    <string name="eigthPeriod">8º Período</string>
+    <string name="ninthPeriod">9º Período</string>
+    <string name="title_activity_main_professores">MainProfessores</string>
+    <string name="title_activity_main_office">MainOffice</string>
+
+</resources>
+

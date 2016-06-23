@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.alissonranielsousa.sinewsapp.MainActivity">
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="100"
+        android:title="@string/action_home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_curso"
+        android:orderInCategory="100"
+        android:title="@string/action_curso"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_plan"
+        android:orderInCategory="100"
+        android:title="@string/action_plan"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_teachers"
+        android:orderInCategory="100"
+        android:title="@string/action_teachers"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_office"
+        android:orderInCategory="100"
+        android:title="@string/action_office"
+        app:showAsAction="never" />
+</menu>
