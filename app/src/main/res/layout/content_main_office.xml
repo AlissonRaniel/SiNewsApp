@@ -33,7 +33,97 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"></LinearLayout>
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    android:background="@color/button_material_light">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Vaga para desenvolvedor"
+                        android:layout_row="1"
+                        android:paddingTop="10dp"
+                        android:id="@+id/textView10" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="O Grupo Rio do Peixe está abrindo vaga para desenvolvedor Web. Perfil: Conhecimentos – Programação orientada a objetos com Java ..."
+                        android:layout_row="1"
+                        android:id="@+id/textView9" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="8dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Vaga para desenvolvedor"
+                        android:paddingTop="10dp"
+                        android:id="@+id/textView11" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="O Grupo Rio do Peixe está abrindo vaga para desenvolvedor Web. Perfil: Conhecimentos – Programação orientada a objetos com Java ..."
+                        android:id="@+id/textView12" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    android:background="@color/button_material_light">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Vaga para desenvolvedor"
+                        android:paddingTop="10dp"
+                        android:id="@+id/textView13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="O Grupo Rio do Peixe está abrindo vaga para desenvolvedor Web. Perfil: Conhecimentos – Programação orientada a objetos com Java ..."
+                        android:id="@+id/textView14" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="8dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Vaga para desenvolvedor"
+                        android:paddingTop="10dp"
+                        android:id="@+id/textView16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="O Grupo Rio do Peixe está abrindo vaga para desenvolvedor Web. Perfil: Conhecimentos – Programação orientada a objetos com Java ..."
+                        android:id="@+id/textView17" />
+                </LinearLayout>
+            </LinearLayout>
         </ScrollView>
 
     </LinearLayout>
