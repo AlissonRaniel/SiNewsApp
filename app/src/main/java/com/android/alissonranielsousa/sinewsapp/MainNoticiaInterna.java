@@ -8,13 +8,14 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
-public class MainOffice extends AppCompatActivity implements View.OnClickListener {
+public class MainNoticiaInterna extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_office);
+        setContentView(R.layout.activity_main_noticia_interna);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -26,6 +27,25 @@ public class MainOffice extends AppCompatActivity implements View.OnClickListene
                         .setAction("Action", null).show();
             }
         });
+
+        Intent it = getIntent();
+
+        if (it.getAction().equals(MainActivity.class)) {
+            TextView titulo = (TextView)findViewById(R.id.textView18);
+            TextView corpo = (TextView)findViewById(R.id.textView19);
+
+            titulo.setText(it.getStringExtra("TITULO"));
+            corpo.setText("pegar do xml...");
+
+//            if(it.getData().equals(R.id.textView3)){
+//
+//            } else if (it.getData().equals(R.id.textView5)){
+//
+//            } else if(it.getData().equals(R.id.textView2)){
+//
+//            }
+
+        }
     }
 
     @Override

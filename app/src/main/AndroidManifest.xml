@@ -33,6 +33,14 @@
         <activity
             android:name=".MainOffice"
             android:label="@string/title_activity_main_office"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainNoticiaInterna"
+            android:label="@string/title_activity_main_noticia_interna"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainOfficeInterna"
+            android:label="@string/title_activity_main_office_interna"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

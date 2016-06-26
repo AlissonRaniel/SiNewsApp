@@ -8,7 +8,7 @@
     <string name="action_office">Empregos e Estágios</string>
 
     <!-- subtitulos -->
-    <string name="txt_news">NOTÍCIAS</string>
+    <string name="txt_news">NOTÍCIA</string>
     <string name="txt_curso">SOBRE O CURSO</string>
     <string name="txt_plan">FLUXOGRAMA</string>
     <string name="txt_teachers">PROFESSORES</string>
@@ -38,6 +38,8 @@
     <string name="ninthPeriod">9º Período</string>
     <string name="title_activity_main_professores">MainProfessores</string>
     <string name="title_activity_main_office">MainOffice</string>
+    <string name="title_activity_main_noticia_interna">MainNoticiaInterna</string>
+    <string name="title_activity_main_office_interna">MainOfficeInterna</string>
 
 </resources>
 

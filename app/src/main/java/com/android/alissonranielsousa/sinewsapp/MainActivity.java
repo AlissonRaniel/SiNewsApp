@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -31,6 +33,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+        LinearLayout news1 = (LinearLayout) findViewById(R.id.news1);
+        LinearLayout news2 = (LinearLayout) findViewById(R.id.news2);
+        LinearLayout news3 = (LinearLayout) findViewById(R.id.news3);
+
+        news1.setOnClickListener(this);
+        news2.setOnClickListener(this);
+        news3.setOnClickListener(this);
 
         // wbvDescription = (WebView)findViewById(R.id.wbvNews);
         // wbvDescription.loadUrl("file:///android_asset/Movie1Description.html");
@@ -75,12 +84,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        Uri uri = null;
+        Intent intent = null;
+        TextView titulo = null;
+
         switch (v.getId()) {
             case R.id.fab:
-                Intent it = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:alisson77@gmail.com"));
-                it.putExtra(Intent.EXTRA_SUBJECT, "Assunto");
-                it.putExtra(Intent.EXTRA_TEXT, "Mensagem");
-                startActivity(Intent.createChooser(it, "Enviar email"));
+                intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:alisson77@gmail.com"));
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Assunto");
+                intent.putExtra(Intent.EXTRA_TEXT, "Mensagem");
+                startActivity(Intent.createChooser(intent, "Enviar email"));
+                break;
+            case R.id.news1:
+                intent = new Intent(this, MainNoticiaInterna.class);
+                titulo = (TextView)findViewById(R.id.textView3);
+                intent.putExtra("TITULO", titulo.getText());
+                startActivity(intent);
+                break;
+            case R.id.news2:
+                intent = new Intent(this, MainNoticiaInterna.class);
+                titulo = (TextView)findViewById(R.id.textView5);
+                intent.putExtra("TITULO", titulo.getText());
+                startActivity(intent);
+                break;
+            case R.id.news3:
+                intent = new Intent(this, MainNoticiaInterna.class);
+                titulo = (TextView)findViewById(R.id.textView2);
+                intent.putExtra("TITULO", titulo.getText());
+                startActivity(intent);
                 break;
         }
 
