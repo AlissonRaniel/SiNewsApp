@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -25,21 +26,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        fab.setOnClickListener(this);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
-        LinearLayout news1 = (LinearLayout) findViewById(R.id.news1);
-        LinearLayout news2 = (LinearLayout) findViewById(R.id.news2);
-        LinearLayout news3 = (LinearLayout) findViewById(R.id.news3);
+        ImageButton img1 = (ImageButton) findViewById(R.id.imageButton2);
+        ImageButton img2 = (ImageButton) findViewById(R.id.imageButton3);
+        ImageButton img3 = (ImageButton) findViewById(R.id.imageButton6);
 
-        news1.setOnClickListener(this);
-        news2.setOnClickListener(this);
-        news3.setOnClickListener(this);
+        TextView text1 = (TextView) findViewById(R.id.textView4);
+        TextView text2 = (TextView) findViewById(R.id.textView6);
+        TextView text3 = (TextView) findViewById(R.id.textView9);
+
+        img1.setOnClickListener(this);
+        img2.setOnClickListener(this);
+        img3.setOnClickListener(this);
+
+        text1.setOnClickListener(this);
+        text2.setOnClickListener(this);
+        text3.setOnClickListener(this);
 
         // wbvDescription = (WebView)findViewById(R.id.wbvNews);
         // wbvDescription.loadUrl("file:///android_asset/Movie1Description.html");
@@ -76,6 +86,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.action_office:
                 startActivity(new Intent(MainActivity.this, MainOffice.class));
                 return true;
+            case R.id.action_help:
+                startActivity(new Intent(MainActivity.this, MainHelp.class));
+                return true;
            default:
                return super.onOptionsItemSelected(item);
         }
@@ -95,24 +108,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra(Intent.EXTRA_TEXT, "Mensagem");
                 startActivity(Intent.createChooser(intent, "Enviar email"));
                 break;
-            case R.id.news1:
+            case R.id.imageButton2: case R.id.textView4:
                 intent = new Intent(this, MainNoticiaInterna.class);
                 titulo = (TextView)findViewById(R.id.textView3);
                 intent.putExtra("TITULO", titulo.getText());
                 startActivity(intent);
                 break;
-            case R.id.news2:
+            case R.id.imageButton3:case R.id.textView6:
                 intent = new Intent(this, MainNoticiaInterna.class);
                 titulo = (TextView)findViewById(R.id.textView5);
                 intent.putExtra("TITULO", titulo.getText());
                 startActivity(intent);
                 break;
-            case R.id.news3:
+            case R.id.imageButton6:case R.id.textView9:
                 intent = new Intent(this, MainNoticiaInterna.class);
                 titulo = (TextView)findViewById(R.id.textView2);
                 intent.putExtra("TITULO", titulo.getText());
                 startActivity(intent);
                 break;
+            default:
+                finish();
         }
 
     }

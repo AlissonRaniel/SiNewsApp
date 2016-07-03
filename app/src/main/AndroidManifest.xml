@@ -41,6 +41,10 @@
         <activity
             android:name=".MainOfficeInterna"
             android:label="@string/title_activity_main_office_interna"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainHelp"
+            android:label="@string/title_activity_main_help"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

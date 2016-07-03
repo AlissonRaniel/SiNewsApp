@@ -6,6 +6,7 @@
     <string name="action_plan">Planos de Curso</string>
     <string name="action_teachers">Professores</string>
     <string name="action_office">Empregos e Estágios</string>
+    <string name="action_help">Sobre o App</string>
 
     <!-- subtitulos -->
     <string name="txt_news">NOTÍCIA</string>
@@ -13,6 +14,7 @@
     <string name="txt_plan">FLUXOGRAMA</string>
     <string name="txt_teachers">PROFESSORES</string>
     <string name="txt_office">EMPREGOS E ESTÁGIOS</string>
+    <string name="txt_help">SOBRE O APP</string>
 
     <!-- noticias -->
     <string name="title1">JSDay 2016 – Na UniFacisa</string>
@@ -24,6 +26,11 @@
 
     <!-- sobre o curso -->
     <string name="title_activity_main_sobre_curso">Sobre o Curso</string>
+    <string name="content_sobre1">Autorizado pela Portaria MEC nº 1.434, D.O.U. de 12/06/2003.</string>
+    <string name="content_sobre2">Duração: 9 semestres (4 anos e meio).</string>
+    <string name="content_sobre3">Carga horária: 3.680 horas/aula.</string>
+    <string name="content_sobre4">Regime de matrícula: Seriado Semestral.</string>
+    <string name="content_sobre5">O bacharel em Sistemas de Informação formado pela Facisa é habilitado para atuar nas áreas de planejamento, análise, utilização e avaliação de Tecnologia da Informação e Comunicação (TIC), no nível operacional, tático ou estratégico de organizações industriais, comerciais ou financeiras, públicas ou privadas de pequeno, médio ou grande porte. Ele deve estar capacitado para conceber, desenvolver e implantar projetos de automação corporativos, para proporcionar melhorias nos processos de negócios e para criar valor de negócio através da TIC. É, ainda, capaz de atuar como analista e projetista de sistemas de informação, programador de sistemas de informação, administrador de bancos de dados, projetista e gerente de redes de computadores, auditor de sistemas de informação, consultor de sistemas de informação e analista de suporte de sistemas.</string>
 
     <!-- plano o curso -->
     <string name="title_activity_main_plano_curso">MainPlanoCurso</string>
@@ -40,6 +47,37 @@
     <string name="title_activity_main_office">MainOffice</string>
     <string name="title_activity_main_noticia_interna">MainNoticiaInterna</string>
     <string name="title_activity_main_office_interna">MainOfficeInterna</string>
+
+    <!-- empregos e estagios -->
+    <string name="content_office">O Grupo Rio do Peixe está abrindo vaga para desenvolvedor Web.
+
+Perfil:
+
+Conhecimentos
+– Programação orientada a objetos com Java
+– Java EE: Servlets, JSPs, Filters
+– Web: HTML, javascript, CSS
+– Banco de dados: SQL, Hibernate/JPA, JDBC
+– Padrões de projeto: MVC, FactoryMethod, Singleton, Service
+
+Diferencial:
+– SGBD: Oracle
+– Web: Jquery, Bootstrap, JSON
+– Ferramenta de relatórios: JasperReport/iReport
+– Qualidade/teste de software: DbUnit, JUnit, Sonar, cobertura, etc.
+– Padrões de projeto: Specification, Abstract Factory, outros
+– Java: Reflection;</string>
+    <string name="content_email">Interessados podem enviar e-mail para: fernandojr.ifcg@live.com</string>
+
+    <!-- interna de noticas -->
+    <string name="content_news">O JSDay Campina Grande acontecerá no dia “23 de Abril” a partir das 8:00 nas instalações da FACISA e você tem a oportunidade de fazer parte desse dia imersivo dedicado a linguagem mais utilizada no mundo, sim, estamos falando do JavaScript!
+
+Um dos maiores eventos nacionais na área de conhecimento de novas tecnologias e frameworks para desenvolvimento de sistemas web. Serão apresentados desde conceitos básicos de JavaScript para os que estão iniciando nesta linguagem de programação, até conceitos novos como React.JS, Node.JS, AngularJS, Progressive Web Apps, entre muitos outros.</string>
+    <!-- sobre o app -->
+    <string name="title_activity_main_help">MainHelp</string>
+    <string name="content_help">Saiba tudo sobre o Curso de Sistema de Informação da Faculdade de Ciências Sociais Aplicadas (FACISA) através do aplicativo SI News. Com informações de Notícias, Eventos que estão acontecendo ou que irão acontencer na Instituição ou fora dela. Além de ter informações sobre o curso, o fluxograma com todas as disciplinas de cada semestre, a lista de professores com seus respectivos contatos. Adicionalmente, existe uma página onde são ofertados empregos e estágio por empresas de todo o Brasil. Portanto compartilhe o SINews com sua rede de contatos e desfrute de mais essa inovação tecnológica.</string>
+
+
 
 </resources>
 

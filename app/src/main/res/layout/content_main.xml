@@ -136,7 +136,7 @@
                         <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/imageButton"
+                            android:id="@+id/imageButton6"
                             android:src="@mipmap/new3" />
 
                         <TextView
@@ -144,7 +144,7 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="@string/news3"
-                            android:id="@+id/textView"
+                            android:id="@+id/textView9"
                             android:textSize="15dp"
                             android:layout_marginTop="10dp" />
                     </LinearLayout>

@@ -10,16 +10,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebView;
+import android.widget.TextView;
 
-public class MainSobreCurso extends AppCompatActivity implements View.OnClickListener{
-
-    private WebView wbvDescription;
+public class MainHelp extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_sobre_curso);
+        setContentView(R.layout.activity_main_help);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -32,7 +30,6 @@ public class MainSobreCurso extends AppCompatActivity implements View.OnClickLis
 //                        .setAction("Action", null).show();
 //            }
 //        });
-
     }
 
     @Override
@@ -51,22 +48,22 @@ public class MainSobreCurso extends AppCompatActivity implements View.OnClickLis
 
         switch (id) {
             case R.id.action_home:
-                startActivity(new Intent(MainSobreCurso.this, MainActivity.class));
+                startActivity(new Intent(MainHelp.this, MainActivity.class));
                 return true;
             case R.id.action_curso:
-                startActivity(new Intent(MainSobreCurso.this, MainSobreCurso.class));
+                startActivity(new Intent(MainHelp.this, MainSobreCurso.class));
                 return true;
             case R.id.action_plan:
-                startActivity(new Intent(MainSobreCurso.this, MainPlanoCurso.class));
+                startActivity(new Intent(MainHelp.this, MainPlanoCurso.class));
                 return true;
             case R.id.action_teachers:
-                startActivity(new Intent(MainSobreCurso.this, MainProfessores.class));
+                startActivity(new Intent(MainHelp.this, MainProfessores.class));
                 return true;
             case R.id.action_office:
-                startActivity(new Intent(MainSobreCurso.this, MainOffice.class));
+                startActivity(new Intent(MainHelp.this, MainOffice.class));
                 return true;
             case R.id.action_help:
-                startActivity(new Intent(MainSobreCurso.this, MainHelp.class));
+                startActivity(new Intent(MainHelp.this, MainHelp.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -76,13 +73,18 @@ public class MainSobreCurso extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
+        Uri uri = null;
+        Intent intent = null;
+
         switch (v.getId()) {
             case R.id.fab:
-                Intent it = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:alisson77@gmail.com"));
-                it.putExtra(Intent.EXTRA_SUBJECT, "Assunto");
-                it.putExtra(Intent.EXTRA_TEXT, "Mensagem");
-                startActivity(Intent.createChooser(it, "Enviar email"));
+                intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:alisson77@gmail.com"));
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Assunto");
+                intent.putExtra(Intent.EXTRA_TEXT, "Mensagem");
+                startActivity(Intent.createChooser(intent, "Enviar email"));
                 break;
+            default:
+                finish();
         }
     }
 }

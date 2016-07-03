@@ -34,13 +34,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView4"
-                android:paddingBottom="20dp"/>
+                android:paddingBottom="20dp"
+                android:src="@mipmap/jsday2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Titulo"
+                android:text="@string/title1"
                 android:id="@+id/textView18"
                 android:paddingBottom="5dp"
                 android:textStyle="bold" />
@@ -49,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="texto da noticia..."
+                android:text="@string/content_news"
                 android:id="@+id/textView19" />
 
         </LinearLayout>
