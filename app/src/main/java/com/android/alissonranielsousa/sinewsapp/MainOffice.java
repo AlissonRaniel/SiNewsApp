@@ -30,6 +30,20 @@ public class MainOffice extends AppCompatActivity implements View.OnClickListene
 //                        .setAction("Action", null).show();
 //            }
 //        });
+
+		TextView text10 = (TextView) findViewById(R.id.textView10);
+        TextView text9 = (TextView) findViewById(R.id.textView9);
+        TextView text11 = (TextView) findViewById(R.id.textView11);
+        TextView text12 = (TextView) findViewById(R.id.textView12);
+        TextView text13 = (TextView) findViewById(R.id.textView13);
+        TextView text14 = (TextView) findViewById(R.id.textView14);
+
+        text10.setOnClickListener(this);
+        text9.setOnClickListener(this);
+        text11.setOnClickListener(this);
+        text12.setOnClickListener(this);
+        text13.setOnClickListener(this);
+        text14.setOnClickListener(this);
     }
 
     @Override
@@ -96,8 +110,6 @@ public class MainOffice extends AppCompatActivity implements View.OnClickListene
                 intent = new Intent(this, MainNoticiaInterna.class);
                 startActivity(intent);
                 break;
-            default:
-                finish();
         }
 
     }

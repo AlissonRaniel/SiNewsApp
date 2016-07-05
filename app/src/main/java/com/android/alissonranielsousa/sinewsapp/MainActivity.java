@@ -126,8 +126,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra("TITULO", titulo.getText());
                 startActivity(intent);
                 break;
-            default:
-                finish();
         }
 
     }

@@ -30,25 +30,7 @@ public class MainNoticiaInterna extends AppCompatActivity implements View.OnClic
 //                        .setAction("Action", null).show();
 //            }
 //        });
-
-        Intent it = getIntent();
-
-        if (it.getAction().equals(MainActivity.class)) {
-            TextView titulo = (TextView)findViewById(R.id.textView18);
-            TextView corpo = (TextView)findViewById(R.id.textView19);
-
-            titulo.setText(it.getStringExtra("TITULO"));
-            corpo.setText("pegar do xml...");
-
-//            if(it.getData().equals(R.id.textView3)){
-//
-//            } else if (it.getData().equals(R.id.textView5)){
-//
-//            } else if(it.getData().equals(R.id.textView2)){
-//
-//            }
-
-        }
+       
     }
 
     @Override
