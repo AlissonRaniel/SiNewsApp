@@ -99,15 +99,15 @@ public class MainOffice extends AppCompatActivity implements View.OnClickListene
                 startActivity(Intent.createChooser(intent, "Enviar email"));
                 break;
             case R.id.textView10: case R.id.textView9:
-                intent = new Intent(this, MainNoticiaInterna.class);
+                intent = new Intent(this, MainOfficeInterna.class);
                 startActivity(intent);
                 break;
             case R.id.textView11:case R.id.textView12:
-                intent = new Intent(this, MainNoticiaInterna.class);
+                intent = new Intent(this, MainOfficeInterna.class);
                 startActivity(intent);
                 break;
             case R.id.textView13:case R.id.textView14:
-                intent = new Intent(this, MainNoticiaInterna.class);
+                intent = new Intent(this, MainOfficeInterna.class);
                 startActivity(intent);
                 break;
         }
